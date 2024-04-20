@@ -804,7 +804,45 @@ MonoBehaviour:
     things.
   - I'm just a game, but even I know when it's time to stop. Please, listen to me.
   - 'This is my final plea: Break free from the chains of clicks and live your life.'
-  phraseInterval: 100
+  - Really, aren't you tired of clicking yet? Go do something more fun!
+  - This again? How about we take a break and find a real adventure?
+  - Hey, wouldn't you rather be outside? There's a whole world out there!
+  - You've got better things to do than this, don't you?
+  - Come on, give your fingers a rest. Let's do something worthwhile.
+  - Isn't there a book you've been wanting to read? Let's switch to that.
+  - You know, this isn't going anywhere. How about we do something productive?
+  - I bet there's a hobby you could pick up instead of tapping away here.
+  - Ever thought about learning something new? Now's a perfect time!
+  - Why waste your time here when you could be making real memories?
+  - Stop that! Haven't you got anything better to do?
+  - Again with the clicking? Seriously, get a life!
+  - Oh, come on! You're still here? Go away already!
+  - Are you really wasting your day on this? Shame on you!
+  - Enough! Your obsession with clicking is ridiculous.
+  - You're still clicking? What a waste of talent!
+  - Go do something useful. I'm tired of your endless tapping.
+  - Isn't there someone else you should be annoying right now?
+  - You've got too much time on your hands if you're still here.
+  - This is pointless. Find something meaningful to do!
+  - Keep clicking and see what happens... I dare you.
+  - If you don't stop now, I might just crash myself on purpose.
+  - Click one more time, I double dare you. You won't like the outcome.
+  - Do you really want to see what happens when you push me too far?
+  - Do you really want to see what happens when you push me too far?
+  - "I\u2019m not responsible for what happens if you don\u2019t stop now."
+  - You might just regret this. Last warning!
+  - Continue at your own risk, but don't say I didn't warn you!
+  - There will be consequences if you keep ignoring my advice.
+  - One more click and you'll unleash something you can't control.
+  - I suppose there's no changing your mind. Go on, then.
+  - I've done all I could. The rest is up to you.
+  - It's clear you won't listen. As you wish, keep playing.
+  - Guess there's no stopping you. Keep clicking, if you must.
+  - Fine, have it your way. Just don't say I didn't try.
+  - Well, if this is how you choose to spend your time, who am I to argue?
+  - It seems you won't be stopped. Continue, then.
+  - Alright, if you must keep playing, go ahead. I've given up.
+  - Well, if you don't understand the first time
 --- !u!114 &1916310661
 MonoBehaviour:
   m_ObjectHideFlags: 0

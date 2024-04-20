@@ -1,6 +1,4 @@
 using DG.Tweening;
-using System.Collections;
-using System.Collections.Generic;
 using UniRx;
 using UnityEngine;
 using UnityEngine.UI;
@@ -14,12 +12,15 @@ public class GameManager : MonoBehaviour
     int index;
     public string[] phrases;
 
-    [SerializeField] int phraseInterval = 10;
+    int phraseInterval;
+
+    IShowAd showAd;
 
     void Start()
     {
+        phraseInterval = Random.Range(40, 60);
         phraseEvent
-            .Where(_ => score % phraseInterval == 0 && score > 0)
+            .Where(_ => score >= phraseInterval)
             .Subscribe(_ => { RandomText(); });
     }
 
@@ -39,5 +40,7 @@ public class GameManager : MonoBehaviour
         }
         scoreText.transform.DOShakeScale(0.15f, 1f, 10, 90f, true, ShakeRandomnessMode.Harmonic);
         phrasesText.transform.DOShakeScale(0.15f, 1f, 10, 90f, true, ShakeRandomnessMode.Harmonic);
+        phraseInterval = Random.Range(40, 60);
+        showAd.ShowAdd();
     }
 }
