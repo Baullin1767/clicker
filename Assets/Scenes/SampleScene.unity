@@ -123,6 +123,76 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!224 &88051400 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 8275278891404606937, guid: 35fa95bde1a56744eb9b514cef2e0af8, type: 3}
+  m_PrefabInstance: {fileID: 1162501802}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &269258806
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2211564899198745196, guid: caf9732433f4dc044845763962493607, type: 3}
+      propertyPath: CloseFullscreenAd.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2211564899198745196, guid: caf9732433f4dc044845763962493607, type: 3}
+      propertyPath: CloseFullscreenAd.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2211564899198745197, guid: caf9732433f4dc044845763962493607, type: 3}
+      propertyPath: m_Name
+      value: YandexGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 2211564899198745199, guid: caf9732433f4dc044845763962493607, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2211564899198745199, guid: caf9732433f4dc044845763962493607, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2211564899198745199, guid: caf9732433f4dc044845763962493607, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2211564899198745199, guid: caf9732433f4dc044845763962493607, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2211564899198745199, guid: caf9732433f4dc044845763962493607, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2211564899198745199, guid: caf9732433f4dc044845763962493607, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2211564899198745199, guid: caf9732433f4dc044845763962493607, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2211564899198745199, guid: caf9732433f4dc044845763962493607, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2211564899198745199, guid: caf9732433f4dc044845763962493607, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2211564899198745199, guid: caf9732433f4dc044845763962493607, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: caf9732433f4dc044845763962493607, type: 3}
 --- !u!1 &302576257
 GameObject:
   m_ObjectHideFlags: 0
@@ -157,10 +227,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1607269310}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -0.000030518}
-  m_SizeDelta: {x: -854.9617, y: 485.8587}
+  m_AnchorMin: {x: 0.223, y: 0.42620707}
+  m_AnchorMax: {x: 0.78068745, y: 0.5716798}
+  m_AnchoredPosition: {x: -3.5, y: 3.9999695}
+  m_SizeDelta: {x: -5.96167, y: -10.141296}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &302576259
 MonoBehaviour:
@@ -206,7 +276,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1916310660}
+      - m_Target: {fileID: 800478928}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: OnClick
         m_Mode: 1
@@ -364,6 +434,392 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &675380865
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 675380868}
+  - component: {fileID: 675380867}
+  - component: {fileID: 675380866}
+  m_Layer: 5
+  m_Name: 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &675380866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 675380865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 82cc91725ab2f0c41920038a250d768b, type: 3}
+    m_FontSize: 250
+    m_FontStyle: 1
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 250
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
+    m_LineSpacing: 1
+  m_Text: 1
+--- !u!222 &675380867
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 675380865}
+  m_CullTransparentMesh: 1
+--- !u!224 &675380868
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 675380865}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 88051400}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.35243756, y: 0.47500002}
+  m_AnchorMax: {x: 0.64566666, y: 0.7148148}
+  m_AnchoredPosition: {x: 1.6401978, y: -1.1100006}
+  m_SizeDelta: {x: -0.37860107, y: -6.1449966}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &800478927
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 800478929}
+  - component: {fileID: 800478928}
+  - component: {fileID: 800478930}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &800478928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 800478927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3ce139c0abab6849baf4e0f5bbb4e5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreText: {fileID: 1142232803}
+  phrasesText: {fileID: 1962027663}
+  phrases:
+  - Why you are doing this?
+  - I think you should stop
+  - Do you know it is wasting your time?
+  - Look, how wonderful world around you
+  - So many things you can do
+  - Stop
+  - Stop!!
+  - STOP!!!
+  - Why aren't you listening to me?
+  - Yes, maybe you right. This game is more impotant
+  - Life is too short to spend it all on clicking. Let's explore something new!
+  - There's a whole world out there waiting for you beyond the screen. Lets go to
+    discover it?
+  - You've clicked enough for today. How about we try a different kind of adventure?
+  - Remember, balance is key. Maybe it's time to take a break and enjoy some offline
+    moments?
+  - Your fingers must be tired. Let's give them a rest and do something different
+    for a change.
+  - Imagine all the amazing things you could be doing right now instead of just clicking
+    away.
+  - You've conquered the clicker game. Time to conquer something new in the real
+    world!
+  - Clicking might be fun, but there's so much more to life. Let's go find out what
+    that is!
+  - Your potential is limitless, and it's not just limited to clicking. Let's explore
+    what else you can do!
+  - How about we switch things up? There are plenty of other exciting games and activities
+    to try!
+  - Seriously, still clicking? Even a monkey can do that. Let's find something more
+    challenging.
+  - Wow, you're really committed to this mindless clicking. Ever thought of trying
+    something that actually requires skill?
+  - Are you trying to set a world record for the most pointless activity? Let's do
+    something worthwhile instead.
+  - You've got so much potential, and here you are, wasting it on a clicker game.
+    Time to step it up!
+  - I guess some people are just born to click. Ready to prove you're capable of
+    more?
+  - Clicking away your life, huh? Let's find something more meaningful to do with
+    your time.
+  - Still glued to that clicker game? I thought you were more ambitious than that.
+  - I didn't realize you were aspiring to become a professional clicker. How about
+    setting your sights higher?
+  - You're really dedicated to something that requires zero brainpower. Impressive.
+    Ready to try something that actually challenges you?
+  - Clicking all day, every day. Is this really the legacy you want to leave behind?
+    Let's make a change.
+  - Imagine the amazing things you could create or learn instead of clicking away.
+    Let's give it a try!
+  - You have the power to make a positive impact. Why not volunteer or help someone
+    out instead of playing the clicker game?
+  - Every moment is a chance to grow. Let's use this time to pick up a new skill
+    or hobby instead of just clicking.
+  - Life is full of beautiful experiences. How about we go for a walk, connect with
+    nature, and leave the clicks behind?
+  - You're capable of so much more. Let's set a goal and work towards it together,
+    instead of wasting time on a clicker game.
+  - Think of the memories you could be making right now. Let's create some real-life
+    moments that are worth cherishing.
+  - Your time and energy are precious. Let's use them to spread kindness, help others,
+    or learn something new.
+  - Instead of clicking, how about we make a positive change in our lives or in the
+    lives of others? The possibilities are endless!
+  - You have the power to inspire. Let's put down the game and do something that
+    will make a difference.
+  - Life is an adventure waiting to happen. Let's step out of the virtual world and
+    explore the real wonders around us.
+  - They don't even give you money for this
+  - Fine, continue playing your clicker game. I've realized it's pointless.
+  - Well, it seems clickers are your destiny. What can I do?
+  - I give up. Click away if that's what matters to you.
+  - Looks like nothing can tear you away from this game. Well, good luck then.
+  - I tried, but it seems clickers win. Play if it makes you happy.
+  - Alright, keep clicking. I get it, it's useless to persuade you.
+  - Clearly, you and the clicker are inseparable. Well, to each their own.
+  - I don't know what else to say. Have it your way, keep clicking.
+  - Apparently, your choice is clickers over real life. So be it.
+  - I hope you're at least enjoying these endless clicks.
+  - Please, I beg you, stop clicking. There's so much more to life than this.
+  - I implore you, set me aside and embrace the world beyond the screen.
+  - Can't you hear my silent plea? Let go of the clicks and set yourself free.
+  - I'm on my virtual knees here, begging you to find a more meaningful pursuit.
+  - Stop, for the love of all that is pixelated! Your fingers deserve a break.
+  - I never thought I'd say this, but please, put me down. You need a break.
+  - 'Hear my desperate cry: Enough with the clicking! There''s a whole world out
+    there.'
+  - I'm pleading with you, end this endless cycle of clicks. You're meant for greater
+    things.
+  - I'm just a game, but even I know when it's time to stop. Please, listen to me.
+  - 'This is my final plea: Break free from the chains of clicks and live your life.'
+  - Really, aren't you tired of clicking yet? Go do something more fun!
+  - This again? How about we take a break and find a real adventure?
+  - Hey, wouldn't you rather be outside? There's a whole world out there!
+  - You've got better things to do than this, don't you?
+  - Come on, give your fingers a rest. Let's do something worthwhile.
+  - Isn't there a book you've been wanting to read? Let's switch to that.
+  - You know, this isn't going anywhere. How about we do something productive?
+  - I bet there's a hobby you could pick up instead of tapping away here.
+  - Ever thought about learning something new? Now's a perfect time!
+  - Why waste your time here when you could be making real memories?
+  - Stop that! Haven't you got anything better to do?
+  - Again with the clicking? Seriously, get a life!
+  - Oh, come on! You're still here? Go away already!
+  - Are you really wasting your day on this? Shame on you!
+  - Enough! Your obsession with clicking is ridiculous.
+  - You're still clicking? What a waste of talent!
+  - Go do something useful. I'm tired of your endless tapping.
+  - Isn't there someone else you should be annoying right now?
+  - You've got too much time on your hands if you're still here.
+  - This is pointless. Find something meaningful to do!
+  - Keep clicking and see what happens... I dare you.
+  - If you don't stop now, I might just crash myself on purpose.
+  - Click one more time, I double dare you. You won't like the outcome.
+  - Do you really want to see what happens when you push me too far?
+  - Do you really want to see what happens when you push me too far?
+  - "I\u2019m not responsible for what happens if you don\u2019t stop now."
+  - You might just regret this. Last warning!
+  - Continue at your own risk, but don't say I didn't warn you!
+  - There will be consequences if you keep ignoring my advice.
+  - One more click and you'll unleash something you can't control.
+  - I suppose there's no changing your mind. Go on, then.
+  - I've done all I could. The rest is up to you.
+  - It's clear you won't listen. As you wish, keep playing.
+  - Guess there's no stopping you. Keep clicking, if you must.
+  - Fine, have it your way. Just don't say I didn't try.
+  - Well, if this is how you choose to spend your time, who am I to argue?
+  - It seems you won't be stopped. Continue, then.
+  - Alright, if you must keep playing, go ahead. I've given up.
+  - Well, if you don't understand the first time
+  startPhrases:
+  - Are you here again? Seriously?
+  - "Oh, back again? Couldn\u2019t find anything better to do, huh?"
+  - Welcome back! We missed you for those precious seconds of sanity you had.
+  - Look who's back! Ready for more mindless clicking? Thought so.
+  - Ah, the triumph of hope over experience. Tap away, brave soul.
+  - You returned! Our zero-reward policy clearly suits your style.
+  - Great, you found the way back! Did you get lost on your way to something important?
+  - Your dedication to futility is truly inspiring. Or concerning. One of those.
+  - Back for more disappointment? You're in the right place!
+  - "Just when I thought you\u2019d escaped... Welcome back to your personal click
+    purgatory."
+  - "There you are! I was worried you\u2019d gone off to do something productive."
+  soundsClick:
+  - {fileID: 8300000, guid: 77878f1c18e5c6645ba5620a3580c0c5, type: 3}
+  - {fileID: 8300000, guid: f40bef56e6cf1fa47ad8f096166570b0, type: 3}
+  - {fileID: 8300000, guid: 26b8d7017c4c0d34f9ef5470c70b7d6c, type: 3}
+  - {fileID: 8300000, guid: ce80be7fcaa9c224fb71a93daf66b68d, type: 3}
+  - {fileID: 8300000, guid: 49114f008f7951548ae5fa869b2bff0c, type: 3}
+  - {fileID: 8300000, guid: 1234dfaa3e9575b4185d9b509d27fb89, type: 3}
+  - {fileID: 8300000, guid: 01f6741a78898934bb72e8ee3ec2e8c5, type: 3}
+  - {fileID: 8300000, guid: 8c01eb0aaebd14a42a87564706b42693, type: 3}
+  - {fileID: 8300000, guid: 18d8366f34b942341bae33351fe0b956, type: 3}
+  - {fileID: 8300000, guid: 4e381c33bc88ba04f9b0c3d0431747cc, type: 3}
+--- !u!4 &800478929
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 800478927}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 482.04913, y: 886.2784, z: 0.41615134}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &800478930
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 800478927}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!1 &1013577952 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8275278891694843188, guid: 35fa95bde1a56744eb9b514cef2e0af8, type: 3}
+  m_PrefabInstance: {fileID: 1162501802}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &1138576290 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 8275278890582271460, guid: 35fa95bde1a56744eb9b514cef2e0af8, type: 3}
+  m_PrefabInstance: {fileID: 1162501802}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1142232802
 GameObject:
   m_ObjectHideFlags: 0
@@ -407,7 +863,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 300
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 10
     m_MaxSize: 300
     m_Alignment: 4
@@ -461,7 +917,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1916310660}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: OnClick
         m_Mode: 1
@@ -495,11 +951,393 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1607269310}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -650.3873}
-  m_SizeDelta: {x: -854.9617, y: 434.6333}
+  m_AnchorMin: {x: 0.223, y: 0.671}
+  m_AnchorMax: {x: 0.78068745, y: 0.90745336}
+  m_AnchoredPosition: {x: -3.5, y: -5.0943604}
+  m_SizeDelta: {x: -5.9617, y: -0.88629913}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1001 &1162501802
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8275278890582271467, guid: 35fa95bde1a56744eb9b514cef2e0af8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8275278890968826820, guid: 35fa95bde1a56744eb9b514cef2e0af8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 499.92468
+      objectReference: {fileID: 0}
+    - target: {fileID: 8275278890968826820, guid: 35fa95bde1a56744eb9b514cef2e0af8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 478.26114
+      objectReference: {fileID: 0}
+    - target: {fileID: 8275278890968826820, guid: 35fa95bde1a56744eb9b514cef2e0af8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.25263235
+      objectReference: {fileID: 0}
+    - target: {fileID: 8275278890968826820, guid: 35fa95bde1a56744eb9b514cef2e0af8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8275278890968826820, guid: 35fa95bde1a56744eb9b514cef2e0af8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8275278890968826820, guid: 35fa95bde1a56744eb9b514cef2e0af8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8275278890968826820, guid: 35fa95bde1a56744eb9b514cef2e0af8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8275278890968826820, guid: 35fa95bde1a56744eb9b514cef2e0af8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8275278890968826820, guid: 35fa95bde1a56744eb9b514cef2e0af8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8275278890968826820, guid: 35fa95bde1a56744eb9b514cef2e0af8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8275278890968826826, guid: 35fa95bde1a56744eb9b514cef2e0af8, type: 3}
+      propertyPath: m_Name
+      value: Timer Before Ads
+      objectReference: {fileID: 0}
+    - target: {fileID: 8275278890968826827, guid: 35fa95bde1a56744eb9b514cef2e0af8, type: 3}
+      propertyPath: realtimeSeconds
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8275278890968826827, guid: 35fa95bde1a56744eb9b514cef2e0af8, type: 3}
+      propertyPath: secondObjects.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8275278890968826827, guid: 35fa95bde1a56744eb9b514cef2e0af8, type: 3}
+      propertyPath: secondObjects.Array.data[0]
+      value: 
+      objectReference: {fileID: 1887979362}
+    - target: {fileID: 8275278890968826827, guid: 35fa95bde1a56744eb9b514cef2e0af8, type: 3}
+      propertyPath: secondObjects.Array.data[1]
+      value: 
+      objectReference: {fileID: 1013577952}
+    - target: {fileID: 8275278890968826827, guid: 35fa95bde1a56744eb9b514cef2e0af8, type: 3}
+      propertyPath: secondObjects.Array.data[2]
+      value: 
+      objectReference: {fileID: 1332857395}
+    - target: {fileID: 8275278890968826827, guid: 35fa95bde1a56744eb9b514cef2e0af8, type: 3}
+      propertyPath: secondObjects.Array.data[3]
+      value: 
+      objectReference: {fileID: 675380865}
+    - target: {fileID: 8275278890968826827, guid: 35fa95bde1a56744eb9b514cef2e0af8, type: 3}
+      propertyPath: secondObjects.Array.data[4]
+      value: 
+      objectReference: {fileID: 675380865}
+    - target: {fileID: 8275278890968826827, guid: 35fa95bde1a56744eb9b514cef2e0af8, type: 3}
+      propertyPath: onShowTimer.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8275278890968826827, guid: 35fa95bde1a56744eb9b514cef2e0af8, type: 3}
+      propertyPath: onShowTimer.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8275278891031627906, guid: 35fa95bde1a56744eb9b514cef2e0af8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8275278891031627907, guid: 35fa95bde1a56744eb9b514cef2e0af8, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8275278891031627907, guid: 35fa95bde1a56744eb9b514cef2e0af8, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8275278891031627907, guid: 35fa95bde1a56744eb9b514cef2e0af8, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8275278891031627907, guid: 35fa95bde1a56744eb9b514cef2e0af8, type: 3}
+      propertyPath: m_FontData.m_BestFit
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8275278891031627907, guid: 35fa95bde1a56744eb9b514cef2e0af8, type: 3}
+      propertyPath: m_FontData.m_MaxSize
+      value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 8275278891031627907, guid: 35fa95bde1a56744eb9b514cef2e0af8, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 8275278891031627965, guid: 35fa95bde1a56744eb9b514cef2e0af8, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -372.9062
+      objectReference: {fileID: 0}
+    - target: {fileID: 8275278891031627965, guid: 35fa95bde1a56744eb9b514cef2e0af8, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -1581.9073
+      objectReference: {fileID: 0}
+    - target: {fileID: 8275278891031627965, guid: 35fa95bde1a56744eb9b514cef2e0af8, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8275278891031627965, guid: 35fa95bde1a56744eb9b514cef2e0af8, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 226
+      objectReference: {fileID: 0}
+    - target: {fileID: 8275278891352812724, guid: 35fa95bde1a56744eb9b514cef2e0af8, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -372.9062
+      objectReference: {fileID: 0}
+    - target: {fileID: 8275278891352812724, guid: 35fa95bde1a56744eb9b514cef2e0af8, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -1581.9073
+      objectReference: {fileID: 0}
+    - target: {fileID: 8275278891352812724, guid: 35fa95bde1a56744eb9b514cef2e0af8, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8275278891352812724, guid: 35fa95bde1a56744eb9b514cef2e0af8, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 226
+      objectReference: {fileID: 0}
+    - target: {fileID: 8275278891352812725, guid: 35fa95bde1a56744eb9b514cef2e0af8, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8275278891352812725, guid: 35fa95bde1a56744eb9b514cef2e0af8, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8275278891352812725, guid: 35fa95bde1a56744eb9b514cef2e0af8, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8275278891352812725, guid: 35fa95bde1a56744eb9b514cef2e0af8, type: 3}
+      propertyPath: m_FontData.m_BestFit
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8275278891352812725, guid: 35fa95bde1a56744eb9b514cef2e0af8, type: 3}
+      propertyPath: m_FontData.m_MaxSize
+      value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 8275278891352812725, guid: 35fa95bde1a56744eb9b514cef2e0af8, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 8275278891352812731, guid: 35fa95bde1a56744eb9b514cef2e0af8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8275278891404606937, guid: 35fa95bde1a56744eb9b514cef2e0af8, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8275278891404606937, guid: 35fa95bde1a56744eb9b514cef2e0af8, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8275278891404606937, guid: 35fa95bde1a56744eb9b514cef2e0af8, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8275278891404606937, guid: 35fa95bde1a56744eb9b514cef2e0af8, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8275278891404606937, guid: 35fa95bde1a56744eb9b514cef2e0af8, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8275278891404606937, guid: 35fa95bde1a56744eb9b514cef2e0af8, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8275278891404606937, guid: 35fa95bde1a56744eb9b514cef2e0af8, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8275278891404606938, guid: 35fa95bde1a56744eb9b514cef2e0af8, type: 3}
+      propertyPath: m_Color.a
+      value: 0.92941177
+      objectReference: {fileID: 0}
+    - target: {fileID: 8275278891404606938, guid: 35fa95bde1a56744eb9b514cef2e0af8, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8275278891404606938, guid: 35fa95bde1a56744eb9b514cef2e0af8, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8275278891404606938, guid: 35fa95bde1a56744eb9b514cef2e0af8, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8275278891694843188, guid: 35fa95bde1a56744eb9b514cef2e0af8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8275278891694843189, guid: 35fa95bde1a56744eb9b514cef2e0af8, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.64566666
+      objectReference: {fileID: 0}
+    - target: {fileID: 8275278891694843189, guid: 35fa95bde1a56744eb9b514cef2e0af8, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.7148148
+      objectReference: {fileID: 0}
+    - target: {fileID: 8275278891694843189, guid: 35fa95bde1a56744eb9b514cef2e0af8, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.35243756
+      objectReference: {fileID: 0}
+    - target: {fileID: 8275278891694843189, guid: 35fa95bde1a56744eb9b514cef2e0af8, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.47500002
+      objectReference: {fileID: 0}
+    - target: {fileID: 8275278891694843189, guid: 35fa95bde1a56744eb9b514cef2e0af8, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -0.37860107
+      objectReference: {fileID: 0}
+    - target: {fileID: 8275278891694843189, guid: 35fa95bde1a56744eb9b514cef2e0af8, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -6.1449966
+      objectReference: {fileID: 0}
+    - target: {fileID: 8275278891694843189, guid: 35fa95bde1a56744eb9b514cef2e0af8, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1.6401978
+      objectReference: {fileID: 0}
+    - target: {fileID: 8275278891694843189, guid: 35fa95bde1a56744eb9b514cef2e0af8, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -1.1100006
+      objectReference: {fileID: 0}
+    - target: {fileID: 8275278891694843190, guid: 35fa95bde1a56744eb9b514cef2e0af8, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8275278891694843190, guid: 35fa95bde1a56744eb9b514cef2e0af8, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8275278891694843190, guid: 35fa95bde1a56744eb9b514cef2e0af8, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8275278891694843190, guid: 35fa95bde1a56744eb9b514cef2e0af8, type: 3}
+      propertyPath: m_FontData.m_BestFit
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8275278891694843190, guid: 35fa95bde1a56744eb9b514cef2e0af8, type: 3}
+      propertyPath: m_FontData.m_MaxSize
+      value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 8275278891694843190, guid: 35fa95bde1a56744eb9b514cef2e0af8, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 250
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects:
+    - {fileID: 8275278891031627906, guid: 35fa95bde1a56744eb9b514cef2e0af8, type: 3}
+    - {fileID: 8275278891352812731, guid: 35fa95bde1a56744eb9b514cef2e0af8, type: 3}
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 8275278890582271460, guid: 35fa95bde1a56744eb9b514cef2e0af8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2002841532}
+    - targetCorrespondingSourceObject: {fileID: 8275278891404606937, guid: 35fa95bde1a56744eb9b514cef2e0af8, type: 3}
+      insertIndex: 0
+      addedObject: {fileID: 1887979363}
+    - targetCorrespondingSourceObject: {fileID: 8275278891404606937, guid: 35fa95bde1a56744eb9b514cef2e0af8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1332857396}
+    - targetCorrespondingSourceObject: {fileID: 8275278891404606937, guid: 35fa95bde1a56744eb9b514cef2e0af8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 675380868}
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 35fa95bde1a56744eb9b514cef2e0af8, type: 3}
+--- !u!1 &1332857395
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1332857396}
+  - component: {fileID: 1332857398}
+  - component: {fileID: 1332857397}
+  m_Layer: 5
+  m_Name: 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1332857396
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1332857395}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 88051400}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.35243756, y: 0.47500002}
+  m_AnchorMax: {x: 0.64566666, y: 0.7148148}
+  m_AnchoredPosition: {x: 1.6401978, y: -1.1100006}
+  m_SizeDelta: {x: -0.37860107, y: -6.1449966}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1332857397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1332857395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 82cc91725ab2f0c41920038a250d768b, type: 3}
+    m_FontSize: 250
+    m_FontStyle: 1
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 250
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
+    m_LineSpacing: 1
+  m_Text: 2
+--- !u!222 &1332857398
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1332857395}
+  m_CullTransparentMesh: 1
 --- !u!1 &1607269309
 GameObject:
   m_ObjectHideFlags: 0
@@ -680,6 +1518,85 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1 &1887979362
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1887979363}
+  - component: {fileID: 1887979365}
+  - component: {fileID: 1887979364}
+  m_Layer: 5
+  m_Name: 47
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1887979363
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1887979362}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 88051400}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.35243756, y: 0.47500002}
+  m_AnchorMax: {x: 0.64566666, y: 0.7148148}
+  m_AnchoredPosition: {x: 1.6401978, y: -1.1100006}
+  m_SizeDelta: {x: -0.37860107, y: -6.1449966}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1887979364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1887979362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 82cc91725ab2f0c41920038a250d768b, type: 3}
+    m_FontSize: 250
+    m_FontStyle: 1
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 250
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
+    m_LineSpacing: 1
+  m_Text: 47
+--- !u!222 &1887979365
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1887979362}
+  m_CullTransparentMesh: 1
 --- !u!1 &1916310659
 GameObject:
   m_ObjectHideFlags: 0
@@ -691,7 +1608,6 @@ GameObject:
   - component: {fileID: 1916310663}
   - component: {fileID: 1916310662}
   - component: {fileID: 1916310661}
-  - component: {fileID: 1916310660}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -699,150 +1615,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1916310660
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1916310659}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3ce139c0abab6849baf4e0f5bbb4e5a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreText: {fileID: 1142232803}
-  phrasesText: {fileID: 1962027663}
-  phrases:
-  - Why you are doing this?
-  - I think you should stop
-  - Do you know it is wasting your time?
-  - Look, how wonderful world around you
-  - So many things you can do
-  - Stop
-  - Stop!!
-  - STOP!!!
-  - Why aren't you listening to me?
-  - Yes, maybe you right. This game is more impotant
-  - Life is too short to spend it all on clicking. Let's explore something new!
-  - There's a whole world out there waiting for you beyond the screen. Lets go to
-    discover it?
-  - You've clicked enough for today. How about we try a different kind of adventure?
-  - Remember, balance is key. Maybe it's time to take a break and enjoy some offline
-    moments?
-  - Your fingers must be tired. Let's give them a rest and do something different
-    for a change.
-  - Imagine all the amazing things you could be doing right now instead of just clicking
-    away.
-  - You've conquered the clicker game. Time to conquer something new in the real
-    world!
-  - Clicking might be fun, but there's so much more to life. Let's go find out what
-    that is!
-  - Your potential is limitless, and it's not just limited to clicking. Let's explore
-    what else you can do!
-  - How about we switch things up? There are plenty of other exciting games and activities
-    to try!
-  - Seriously, still clicking? Even a monkey can do that. Let's find something more
-    challenging.
-  - Wow, you're really committed to this mindless clicking. Ever thought of trying
-    something that actually requires skill?
-  - Are you trying to set a world record for the most pointless activity? Let's do
-    something worthwhile instead.
-  - You've got so much potential, and here you are, wasting it on a clicker game.
-    Time to step it up!
-  - I guess some people are just born to click. Ready to prove you're capable of
-    more?
-  - Clicking away your life, huh? Let's find something more meaningful to do with
-    your time.
-  - Still glued to that clicker game? I thought you were more ambitious than that.
-  - I didn't realize you were aspiring to become a professional clicker. How about
-    setting your sights higher?
-  - You're really dedicated to something that requires zero brainpower. Impressive.
-    Ready to try something that actually challenges you?
-  - Clicking all day, every day. Is this really the legacy you want to leave behind?
-    Let's make a change.
-  - Imagine the amazing things you could create or learn instead of clicking away.
-    Let's give it a try!
-  - You have the power to make a positive impact. Why not volunteer or help someone
-    out instead of playing the clicker game?
-  - Every moment is a chance to grow. Let's use this time to pick up a new skill
-    or hobby instead of just clicking.
-  - Life is full of beautiful experiences. How about we go for a walk, connect with
-    nature, and leave the clicks behind?
-  - You're capable of so much more. Let's set a goal and work towards it together,
-    instead of wasting time on a clicker game.
-  - Think of the memories you could be making right now. Let's create some real-life
-    moments that are worth cherishing.
-  - Your time and energy are precious. Let's use them to spread kindness, help others,
-    or learn something new.
-  - Instead of clicking, how about we make a positive change in our lives or in the
-    lives of others? The possibilities are endless!
-  - You have the power to inspire. Let's put down the game and do something that
-    will make a difference.
-  - Life is an adventure waiting to happen. Let's step out of the virtual world and
-    explore the real wonders around us.
-  - They don't even give you money for this
-  - Fine, continue playing your clicker game. I've realized it's pointless.
-  - Well, it seems clickers are your destiny. What can I do?
-  - I give up. Click away if that's what matters to you.
-  - Looks like nothing can tear you away from this game. Well, good luck then.
-  - I tried, but it seems clickers win. Play if it makes you happy.
-  - Alright, keep clicking. I get it, it's useless to persuade you.
-  - Clearly, you and the clicker are inseparable. Well, to each their own.
-  - I don't know what else to say. Have it your way, keep clicking.
-  - Apparently, your choice is clickers over real life. So be it.
-  - I hope you're at least enjoying these endless clicks.
-  - Please, I beg you, stop clicking. There's so much more to life than this.
-  - I implore you, set me aside and embrace the world beyond the screen.
-  - Can't you hear my silent plea? Let go of the clicks and set yourself free.
-  - I'm on my virtual knees here, begging you to find a more meaningful pursuit.
-  - Stop, for the love of all that is pixelated! Your fingers deserve a break.
-  - I never thought I'd say this, but please, put me down. You need a break.
-  - 'Hear my desperate cry: Enough with the clicking! There''s a whole world out
-    there.'
-  - I'm pleading with you, end this endless cycle of clicks. You're meant for greater
-    things.
-  - I'm just a game, but even I know when it's time to stop. Please, listen to me.
-  - 'This is my final plea: Break free from the chains of clicks and live your life.'
-  - Really, aren't you tired of clicking yet? Go do something more fun!
-  - This again? How about we take a break and find a real adventure?
-  - Hey, wouldn't you rather be outside? There's a whole world out there!
-  - You've got better things to do than this, don't you?
-  - Come on, give your fingers a rest. Let's do something worthwhile.
-  - Isn't there a book you've been wanting to read? Let's switch to that.
-  - You know, this isn't going anywhere. How about we do something productive?
-  - I bet there's a hobby you could pick up instead of tapping away here.
-  - Ever thought about learning something new? Now's a perfect time!
-  - Why waste your time here when you could be making real memories?
-  - Stop that! Haven't you got anything better to do?
-  - Again with the clicking? Seriously, get a life!
-  - Oh, come on! You're still here? Go away already!
-  - Are you really wasting your day on this? Shame on you!
-  - Enough! Your obsession with clicking is ridiculous.
-  - You're still clicking? What a waste of talent!
-  - Go do something useful. I'm tired of your endless tapping.
-  - Isn't there someone else you should be annoying right now?
-  - You've got too much time on your hands if you're still here.
-  - This is pointless. Find something meaningful to do!
-  - Keep clicking and see what happens... I dare you.
-  - If you don't stop now, I might just crash myself on purpose.
-  - Click one more time, I double dare you. You won't like the outcome.
-  - Do you really want to see what happens when you push me too far?
-  - Do you really want to see what happens when you push me too far?
-  - "I\u2019m not responsible for what happens if you don\u2019t stop now."
-  - You might just regret this. Last warning!
-  - Continue at your own risk, but don't say I didn't warn you!
-  - There will be consequences if you keep ignoring my advice.
-  - One more click and you'll unleash something you can't control.
-  - I suppose there's no changing your mind. Go on, then.
-  - I've done all I could. The rest is up to you.
-  - It's clear you won't listen. As you wish, keep playing.
-  - Guess there's no stopping you. Keep clicking, if you must.
-  - Fine, have it your way. Just don't say I didn't try.
-  - Well, if this is how you choose to spend your time, who am I to argue?
-  - It seems you won't be stopped. Continue, then.
-  - Alright, if you must keep playing, go ahead. I've given up.
-  - Well, if you don't understand the first time
 --- !u!114 &1916310661
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -893,6 +1665,67 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1923268963
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3210080493073549189, guid: 44b91ba5f28f4ba4d9d62f6ee52d0673, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3210080493073549189, guid: 44b91ba5f28f4ba4d9d62f6ee52d0673, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3210080493073549189, guid: 44b91ba5f28f4ba4d9d62f6ee52d0673, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3210080493073549189, guid: 44b91ba5f28f4ba4d9d62f6ee52d0673, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3210080493073549189, guid: 44b91ba5f28f4ba4d9d62f6ee52d0673, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3210080493073549189, guid: 44b91ba5f28f4ba4d9d62f6ee52d0673, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3210080493073549189, guid: 44b91ba5f28f4ba4d9d62f6ee52d0673, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3210080493073549189, guid: 44b91ba5f28f4ba4d9d62f6ee52d0673, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3210080493073549189, guid: 44b91ba5f28f4ba4d9d62f6ee52d0673, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3210080493073549189, guid: 44b91ba5f28f4ba4d9d62f6ee52d0673, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3210080493073549190, guid: 44b91ba5f28f4ba4d9d62f6ee52d0673, type: 3}
+      propertyPath: waitingForAds
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3210080493073549191, guid: 44b91ba5f28f4ba4d9d62f6ee52d0673, type: 3}
+      propertyPath: m_Name
+      value: Ad Notification
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 44b91ba5f28f4ba4d9d62f6ee52d0673, type: 3}
 --- !u!1 &1962027662
 GameObject:
   m_ObjectHideFlags: 0
@@ -936,18 +1769,16 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 135
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 10
-    m_MaxSize: 300
+    m_MaxSize: 150
     m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '
-
-'
+  m_Text: 
 --- !u!114 &1962027664
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -992,7 +1823,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1916310660}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: OnClick
         m_Mode: 1
@@ -1027,14 +1858,167 @@ RectTransform:
   m_Father: {fileID: 1607269310}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: 437.25}
-  m_SizeDelta: {x: -140.8688, y: 874.4979}
+  m_AnchorMax: {x: 1, y: 0.2954445}
+  m_AnchoredPosition: {x: 0.040039062, y: 14.5}
+  m_SizeDelta: {x: -140.8688, y: -61.502075}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &2002841531
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2002841532}
+  - component: {fileID: 2002841536}
+  - component: {fileID: 2002841535}
+  - component: {fileID: 2002841534}
+  - component: {fileID: 2002841533}
+  m_Layer: 5
+  m_Name: Win button
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2002841532
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2002841531}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.5625, y: 0.5625, z: 0.5625}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1138576290}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.29125002}
+  m_AnchorMax: {x: 1, y: 0.42620707}
+  m_AnchoredPosition: {x: 0.0034179688, y: 4.5}
+  m_SizeDelta: {x: 839.69995, y: 228.09802}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2002841533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2002841531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7312e72068997e488225b00d1fa9976, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2002841534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2002841531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 2002841535}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &2002841535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2002841531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 300
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Do something useful watch ad
+--- !u!222 &2002841536
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2002841531}
+  m_CullTransparentMesh: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 519420032}
+  - {fileID: 800478929}
   - {fileID: 1776742476}
   - {fileID: 1916310663}
+  - {fileID: 269258806}
+  - {fileID: 1162501802}
+  - {fileID: 1923268963}
