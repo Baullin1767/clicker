@@ -11,11 +11,18 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField] Text scoreText;
     [SerializeField] Text phrasesText;
-    int score;
-    Subject<int> phraseEvent = new Subject<int>();
-    int index;
     [SerializeField] string[] phrases;
     [SerializeField] string[] startPhrases;
+    Subject<int> phraseEvent = new Subject<int>();
+
+    int score;
+    int index;
+
+    int rank;
+    [SerializeField] Text rank_titleText;
+    [SerializeField] Image rank_spriteImage;
+    [SerializeField] Sprite[] rank_sprites;
+
     [SerializeField] AudioClip[] soundsClick;
 
     int phraseInterval;
@@ -23,11 +30,17 @@ public class GameManager : MonoBehaviour
     AudioSource audioSource;
 
     string path_to_phrases_file;
+    string path_to_ranks_file;
     [Serializable]
     private class PhrasesContainer
     {
         public string[] phrases;
         public string[] startPhrases;
+    }
+    [Serializable]
+    private class RanksContainer
+    {
+        public string[] ranks;
     }
 
     private void OnEnable() => YandexGame.GetDataEvent += GetLoad;
@@ -35,14 +48,22 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
+        if (YandexGame.SDKEnabled == true)
+        {
+            GetLoad();
+        }
+
         path_to_phrases_file = Application.dataPath;
-        if (Application.systemLanguage == SystemLanguage.English)
+        path_to_ranks_file = Application.dataPath;
+        if (Application.systemLanguage == SystemLanguage.English || YandexGame.EnvironmentData.language == "en")
         {
             path_to_phrases_file += "/phrases_eng.json";
+            path_to_ranks_file += "/ranks_eng.json";
         }
-        else if (Application.systemLanguage == SystemLanguage.Russian)
+        else if (Application.systemLanguage == SystemLanguage.Russian || YandexGame.EnvironmentData.language == "ru")
         {
             path_to_phrases_file += "/phrases_ru.json";
+            path_to_ranks_file += "/ranks_ru.json";
         }
 
         if (File.Exists(path_to_phrases_file))
@@ -53,13 +74,6 @@ public class GameManager : MonoBehaviour
             startPhrases = container.startPhrases;
         }
 
-        if (YandexGame.SDKEnabled == true)
-        {
-            GetLoad();
-        }
-        scoreText.text = score.ToString();
-        phraseInterval = score + UnityEngine.Random.Range(30, 40);
-        audioSource = GetComponent<AudioSource>();
     }
 
     void Start()
@@ -67,7 +81,18 @@ public class GameManager : MonoBehaviour
         phraseEvent
             .Where(_ => score >= phraseInterval)
             .Subscribe(_ => { RandomText(); });
-        if(score > 0)
+        phraseEvent
+            .Where(_ => rank < 9 && index == 0 && score != 0 && score >= phraseInterval)
+            .Subscribe(_ => {
+                rank++;
+                YandexGame.savesData.rank = rank;
+                UpdateRank();
+            });
+        UpdateRank();
+        scoreText.text = score.ToString();
+        phraseInterval = score + UnityEngine.Random.Range(30, 40);
+        audioSource = GetComponent<AudioSource>();
+        if (score > 0)
         {
             phrasesText.text = startPhrases[UnityEngine.Random.Range(0, startPhrases.Length)];
         }
@@ -77,6 +102,7 @@ public class GameManager : MonoBehaviour
     {
         score = YandexGame.savesData.score;
         index = YandexGame.savesData.index;
+        rank = YandexGame.savesData.rank;
     }
 
     public void OnClick()
@@ -94,13 +120,25 @@ public class GameManager : MonoBehaviour
         YandexGame.savesData.index = index;
         YandexGame.savesData.score = score;
         YandexGame.SaveProgress();
+        YandexGame.NewLeaderboardScores("clicker", score);
 
-        if (index == phrases.Length)
+        if (index >= phrases.Length)
         {
             index = 0;
         }
         scoreText.transform.DOShakeScale(0.15f, 1f, 10, 90f, true, ShakeRandomnessMode.Harmonic);
         phrasesText.transform.DOShakeScale(0.15f, 1f, 10, 90f, true, ShakeRandomnessMode.Harmonic);
         phraseInterval += UnityEngine.Random.Range(30, 50);
+    }
+
+    private void UpdateRank()
+    {
+        if (File.Exists(path_to_ranks_file))
+        {
+            string json = File.ReadAllText(path_to_ranks_file);
+            RanksContainer container = JsonUtility.FromJson<RanksContainer>(json);
+            rank_titleText.text = container.ranks[rank];
+        }
+        rank_spriteImage.sprite = rank_sprites[rank];
     }
 }

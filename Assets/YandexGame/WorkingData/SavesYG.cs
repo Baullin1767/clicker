@@ -21,6 +21,7 @@ namespace YG
 
         public int index;
         public int score;
+        public int rank;
 
         // Поля (сохранения) можно удалять и создавать новые. При обновлении игры сохранения ломаться не должны
 
