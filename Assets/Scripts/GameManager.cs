@@ -1,11 +1,9 @@
-﻿using DG.Tweening;
-using DG.Tweening.Plugins.Core.PathCore;
-using System;
-using System.IO;
+﻿using AppodealStack.Monetization.Api;
+using AppodealStack.Monetization.Common;
+using DG.Tweening;
 using UniRx;
 using UnityEngine;
 using UnityEngine.UI;
-using YG;
 
 public class GameManager : MonoBehaviour
 {
@@ -281,27 +279,21 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] AudioClip[] soundsClick;
 
+    [SerializeField] GameObject showAd;
+
     int phraseInterval;
 
     AudioSource audioSource;
 
-    private void OnEnable() => YandexGame.GetDataEvent += GetLoad;
-    private void OnDisable() => YandexGame.GetDataEvent -= GetLoad;
-
     private void Awake()
     {
-        if (YandexGame.SDKEnabled == true)
-        {
-            GetLoad();
-        }
-
-        if(YandexGame.EnvironmentData.language == "ru" || Application.systemLanguage == SystemLanguage.Russian)
+        if(Application.systemLanguage == SystemLanguage.Russian)
         {
             phrases = phrases_ru;
             ranks = ranks_ru;
             startPhrases = startPhrases_ru;
         }
-        else if(YandexGame.EnvironmentData.language == "en" || Application.systemLanguage == SystemLanguage.English)
+        else if(Application.systemLanguage == SystemLanguage.English)
         {
             phrases = phrases_eng;
             ranks = ranks_eng;
@@ -311,6 +303,8 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        GetLoad();
+
         phraseEvent
             .Where(_ => score >= phraseInterval)
             .Subscribe(_ => { RandomText(); });
@@ -318,24 +312,27 @@ public class GameManager : MonoBehaviour
             .Where(_ => rank < 9 && index == 0 && score != 0 && score >= phraseInterval)
             .Subscribe(_ => {
                 rank++;
-                YandexGame.savesData.rank = rank;
+                PlayerPrefs.SetInt("rank", rank);
                 UpdateRank();
             });
+
         UpdateRank();
+
         scoreText.text = score.ToString();
-        phraseInterval = score + UnityEngine.Random.Range(30, 40);
+        phraseInterval = score + Random.Range(30, 40);
         audioSource = GetComponent<AudioSource>();
+
         if (score > 0)
         {
-            phrasesText.text = startPhrases[UnityEngine.Random.Range(0, startPhrases.Length)];
+            phrasesText.text = startPhrases[Random.Range(0, startPhrases.Length)];
         }
     }
 
     public void GetLoad()
     {
-        score = YandexGame.savesData.score;
-        index = YandexGame.savesData.index;
-        rank = YandexGame.savesData.rank;
+        score = PlayerPrefs.GetInt("score", 0);
+        index = PlayerPrefs.GetInt("index", 0);
+        rank = PlayerPrefs.GetInt("rank", 0);
     }
 
     public void OnClick()
@@ -343,17 +340,22 @@ public class GameManager : MonoBehaviour
         score++;
         phraseEvent.OnNext(score);
         scoreText.text = score.ToString();
-        audioSource.PlayOneShot(soundsClick[UnityEngine.Random.Range(0, soundsClick.Length)]);
+        audioSource.PlayOneShot(soundsClick[Random.Range(0, soundsClick.Length)]);
+        PlayerPrefs.SetInt("score", score);
     }
-    public void RandomText() 
+    public void RandomText()
     {
+
+        int chanse = Random.Range(0, 4);
+        if (chanse == 0)
+            showAd.SetActive(true);
         phrasesText.text = phrases[index];
         index++;
 
-        YandexGame.savesData.index = index;
-        YandexGame.savesData.score = score;
-        YandexGame.SaveProgress();
-        YandexGame.NewLeaderboardScores("clicker", score);
+        //YandexGame.NewLeaderboardScores("clicker", score);
+        PlayerPrefs.SetInt("index", index);
+        PlayerPrefs.SetInt("score", score);
+        PlayerPrefs.Save();
 
         if (index >= phrases.Length)
         {
@@ -361,7 +363,7 @@ public class GameManager : MonoBehaviour
         }
         scoreText.transform.DOShakeScale(0.15f, 1f, 10, 90f, true, ShakeRandomnessMode.Harmonic);
         phrasesText.transform.DOShakeScale(0.15f, 1f, 10, 90f, true, ShakeRandomnessMode.Harmonic);
-        phraseInterval += UnityEngine.Random.Range(30, 50);
+        phraseInterval += Random.Range(30, 50);
     }
 
     private void UpdateRank()
